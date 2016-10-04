@@ -8,7 +8,7 @@
     "build": "babel src --out-dir lib",
     "build:umd": "webpack src/index.js dist/chai-stream-es6.js && NODE_ENV=production webpack src/index.js dist/chai-stream-es6.min.js",
     "lint": "eslint src test",
-    "test": "NODE_ENV=test mocha",
+    "test": "NODE_ENV=test mocha --compilers js:babel-register --require js:babel-polyfill --recursive",
     "test:watch": "NODE_ENV=test mocha --watch",
     "test:cov": "babel-node ./node_modules/.bin/isparta cover ./node_modules/.bin/_mocha",
     "prepublish": "npm run lint && npm run test && npm run clean && npm run build && npm run build:umd"
