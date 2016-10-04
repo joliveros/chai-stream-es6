@@ -28,12 +28,15 @@
     "babel-core": "^6.16.0",
     "babel-eslint": "^7.0.0",
     "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.16.0",
     "babel-preset-es2016": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.16.3",
     "eslint": "^3.6",
     "eslint-config-airbnb": "12.0.0",
+    "eslint-plugin-import": "^1.6.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-react": "^6.3.0",
-    "expect": "^1.6.0",
     "isparta": "^4.0.0",
     "mocha": "^3.1.0",
     "rimraf": "^2.3.4",
@@ -41,6 +44,7 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
+    "expect": "^1.6.0",
     "invariant": "^2.0.0"
   }
 }
