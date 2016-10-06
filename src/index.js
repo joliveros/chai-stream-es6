@@ -1,9 +1,10 @@
-const Promise = require('es6-promise');
-const highland = require('highland');
+import highland from 'highland'; // eslint-disable-line
+import assert from './assert';
+import expect from './expect';
 
 function chaiStream(chai, utils) {
-  require('./assert')(chai, utils);
-  require('./expect')(chai, utils);
+  assert(chai, utils);
+  expect(chai, utils);
 }
 
-module.exports = chaiStream;
+export default chaiStream;
