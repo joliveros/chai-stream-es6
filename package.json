@@ -1,6 +1,6 @@
 {
   "name": "chai-stream-es6",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Extends Chai with assertions about streams.",
   "main": "lib/index.js",
   "scripts": {
